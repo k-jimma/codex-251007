@@ -1,0 +1,66 @@
+.navigation {
+  position: sticky;
+  top: 1.5rem;
+  margin: 1.5rem clamp(1.5rem, 6vw, 6rem);
+  padding: 0.85rem 1.5rem;
+  border-radius: 9999px;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  backdrop-filter: blur(14px);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: 10;
+}
+
+.navigation__logo {
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f8fafc;
+}
+
+.navigation__links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.navigation__links a {
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: rgba(226, 232, 240, 0.7);
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.navigation__links a:hover {
+  color: #f8fafc;
+  background: rgba(99, 102, 241, 0.18);
+}
+
+.navigation__logo:focus-visible,
+.navigation__links a:focus-visible,
+.navigation .primary-button:focus-visible {
+  outline: 2px solid rgba(94, 234, 212, 0.8);
+  outline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+
+  .navigation__links {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navigation .primary-button {
+    margin-left: auto;
+  }
+}

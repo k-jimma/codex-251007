@@ -1,0 +1,40 @@
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #6366f1 0%, #38bdf8 100%);
+  color: #0b1120;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 40px rgba(99, 102, 241, 0.35);
+}
+
+.primary-button:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 16px 48px rgba(99, 102, 241, 0.45);
+}
+
+.primary-button:focus-visible {
+  outline: 2px solid rgba(56, 189, 248, 0.75);
+  outline-offset: 4px;
+}
+
+.primary-button--invert {
+  background: rgba(15, 23, 42, 0.75);
+  color: #f8fafc;
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.primary-button--invert:hover {
+  background: rgba(15, 23, 42, 0.95);
+}
+
+.primary-button__icon {
+  width: 1.25rem;
+}

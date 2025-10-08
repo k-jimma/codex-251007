@@ -1,0 +1,91 @@
+.footer {
+  margin-top: clamp(5rem, 10vw, 8rem);
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 6vw, 6rem);
+  border-top: 1px solid rgba(148, 163, 184, 0.18);
+  display: grid;
+  gap: 2.5rem;
+  background: rgba(2, 6, 23, 0.65);
+  backdrop-filter: blur(16px);
+}
+
+.footer__brand {
+  display: grid;
+  gap: 1rem;
+  max-width: 36rem;
+}
+
+.footer__logo {
+  font-family: "Playfair Display", ui-serif, Georgia, serif;
+  font-size: 1.9rem;
+  letter-spacing: 0.12em;
+}
+
+.footer__brand p {
+  margin: 0;
+  color: rgba(226, 232, 240, 0.7);
+}
+
+.footer__grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.footer__grid h3 {
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.85rem;
+  color: rgba(226, 232, 240, 0.7);
+}
+
+.footer__grid ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.footer__grid li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: rgba(148, 163, 184, 0.85);
+}
+
+.footer__grid svg {
+  width: 1.1rem;
+  color: rgba(99, 102, 241, 0.8);
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(148, 163, 184, 0.15);
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: rgba(148, 163, 184, 0.75);
+}
+
+.footer__links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer__links a {
+  color: rgba(226, 232, 240, 0.8);
+  text-decoration: none;
+}
+
+@media (min-width: 56rem) {
+  .footer__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

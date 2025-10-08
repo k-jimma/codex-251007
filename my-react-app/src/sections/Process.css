@@ -1,0 +1,44 @@
+.process {
+  padding: clamp(4rem, 8vw, 7.5rem) clamp(1.5rem, 6vw, 6.5rem);
+  display: grid;
+  gap: 2.5rem;
+}
+
+.process__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.process__list li {
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  background: rgba(15, 23, 42, 0.65);
+  display: grid;
+  gap: 0.75rem;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.process__list li:hover {
+  transform: translateY(-4px);
+  border-color: rgba(99, 102, 241, 0.55);
+}
+
+.process__list h3 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.process__list p {
+  margin: 0;
+  color: rgba(226, 232, 240, 0.75);
+}
+
+@media (min-width: 56rem) {
+  .process__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

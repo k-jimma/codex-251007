@@ -1,0 +1,60 @@
+.services {
+  padding: clamp(4rem, 8vw, 7rem) clamp(1.5rem, 6vw, 6rem);
+  display: grid;
+  gap: 3rem;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.75rem;
+}
+
+.services__card {
+  position: relative;
+  padding: 2.25rem;
+  border-radius: 1.75rem;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.55));
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  backdrop-filter: blur(14px);
+  display: grid;
+  gap: 1.25rem;
+  transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.services__card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(56, 189, 248, 0.55);
+}
+
+.services__icon {
+  width: 2.5rem;
+  color: #38bdf8;
+}
+
+.services__card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.services__card p {
+  margin: 0;
+  color: rgba(226, 232, 240, 0.75);
+}
+
+.services__card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services__card li {
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  background: rgba(99, 102, 241, 0.18);
+  font-size: 0.85rem;
+}

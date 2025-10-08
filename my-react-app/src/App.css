@@ -1,0 +1,11 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #f8fafc;
+}
+
+main {
+  display: grid;
+  gap: clamp(3rem, 8vw, 6rem);
+}

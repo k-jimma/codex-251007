@@ -1,0 +1,45 @@
+.testimonials {
+  padding: clamp(4rem, 8vw, 7rem) clamp(1.5rem, 6vw, 6rem);
+  display: grid;
+  gap: 2.5rem;
+}
+
+.testimonials__wrapper {
+  display: grid;
+  gap: 2rem;
+}
+
+.testimonials__card {
+  margin: 0;
+  padding: 2.25rem;
+  border-radius: 1.75rem;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(30, 41, 59, 0.75));
+  border: 1px solid rgba(99, 102, 241, 0.18);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.45);
+  display: grid;
+  gap: 1.25rem;
+}
+
+.testimonials__card p {
+  margin: 0;
+  font-size: 1.15rem;
+  color: rgba(226, 232, 240, 0.85);
+}
+
+.testimonials__card footer {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+  color: rgba(148, 163, 184, 0.85);
+}
+
+.testimonials__card footer span:first-child {
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+@media (min-width: 56rem) {
+  .testimonials__wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
